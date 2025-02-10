@@ -1,0 +1,8 @@
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+}

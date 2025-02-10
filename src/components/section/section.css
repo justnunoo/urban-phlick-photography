@@ -1,0 +1,31 @@
+.animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+  }
+  .animate-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.05);
+  }
+
+  #services {
+    background-color: aliceblue;
+  }
