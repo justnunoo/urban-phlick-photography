@@ -159,7 +159,7 @@ const Navbar = () => {
           {["Home", "About", "Contact"].map((item, index) => (
             <motion.a
               key={item}
-              href="#"
+              href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
               className="text-white hover:text-gray-400"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -184,7 +184,7 @@ const Navbar = () => {
             {["Home", "About", "Contact"].map((item, index) => (
               <motion.a
                 key={item}
-                href="#"
+                href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
                 className="block text-white py-2 hover:bg-gray-700"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
